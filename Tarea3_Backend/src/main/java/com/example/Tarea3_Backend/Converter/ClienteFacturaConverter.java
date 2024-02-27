@@ -19,7 +19,7 @@ public class ClienteFacturaConverter {
 
         List<Factura> facturas = cliente.getFacturas();
 
-        List<FacturaDTO> facturaDTOList = new ArrayList<>();
+        List<FacturaDTO> listaFacturas = new ArrayList<>();
 
         facturas.forEach(factura -> {
             FacturaDTO facturaDTO = new FacturaDTO();
@@ -27,10 +27,10 @@ public class ClienteFacturaConverter {
             facturaDTO.setId(factura.getId());
             facturaDTO.setImporteTotal(factura.getImporteTotal());
 
-            facturaDTOList.add(facturaDTO);
+            listaFacturas.add(facturaDTO);
         });
 
-        clienteFacturasDTO.setLista_Facturas(facturaDTOList);
+        clienteFacturasDTO.setLista_Facturas(listaFacturas);
 
         return clienteFacturasDTO;
     }
