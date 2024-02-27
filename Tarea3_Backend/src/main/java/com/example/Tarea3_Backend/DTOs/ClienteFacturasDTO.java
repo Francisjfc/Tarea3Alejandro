@@ -15,6 +15,6 @@ public class ClienteFacturasDTO {
 
     private String cliente;
 
-    private List<FacturaDTO> facturaDTOList;
+    private List<FacturaDTO> lista_Facturas;
 
 }

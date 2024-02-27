@@ -30,7 +30,7 @@ public class ClienteFacturaConverter {
             facturaDTOList.add(facturaDTO);
         });
 
-        clienteFacturasDTO.setFacturaDTOList(facturaDTOList);
+        clienteFacturasDTO.setLista_Facturas(facturaDTOList);
 
         return clienteFacturasDTO;
     }
