@@ -9,5 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class FacturaDTO {
 
+    private Long id;
 
+    private Double importeTotal;
 }

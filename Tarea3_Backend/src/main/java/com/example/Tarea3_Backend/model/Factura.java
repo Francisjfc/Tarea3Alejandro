@@ -17,7 +17,7 @@ public class Factura {
     private Long id;
 
     @Column(name = "importe_total")
-    private String importeTotal;
+    private Double importeTotal;
 
     @ManyToOne
     @JoinColumn(name = "cliente_id", nullable = false)
