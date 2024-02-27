@@ -1,5 +1,6 @@
 package com.example.Tarea3_Backend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,7 +26,8 @@ public class Cliente {
     private String segundoApellido;
     private String email;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "cliente")
+    @JsonIgnore
+    @OneToMany(fetch = FetchType.LAZY ,mappedBy = "cliente")
     private List<Factura> facturas;
 
 }

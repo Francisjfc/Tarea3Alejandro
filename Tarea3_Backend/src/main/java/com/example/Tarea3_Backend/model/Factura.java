@@ -20,6 +20,5 @@ public class Factura {
     private Double importeTotal;
 
     @ManyToOne
-    @JoinColumn(name = "cliente_id", nullable = false)
     private Cliente cliente;
 }
