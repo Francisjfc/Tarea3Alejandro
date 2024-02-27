@@ -12,6 +12,9 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 public class ClienteFacturasDTO {
-    private Cliente cliente;
+
+    private String cliente;
+
     private List<FacturaDTO> facturaDTOList;
+
 }
